@@ -1,7 +1,7 @@
 import UrlScanner from "../../components/UrlScanner/UrlScanner";
-import image1 from "../../assets/Bank-fake.png";
-import image2 from "../../assets/email-scam-main.png";
-import image3 from "../../assets/Fake-Giveaway-Scams-on-Social-Media-Platforms.jpg";
+// import image1 from "../../../public/images/Bank-fake.png";
+// import image2 from "../../../public/images/email-scam-main.png";
+// import image3 from "../../../public/images/Fake-Giveaway-Scams-on-Social-Media-Platforms.jpg";
 
 export default function Home() {
   return (
@@ -54,7 +54,7 @@ export default function Home() {
 
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-white/5 p-6 rounded-xl border border-white/10">
-            <img src={image1}
+            <img src="/images/Bank-fake.png" alt="Bank scam"
              className="rounded-lg mb-4" />
             <p className="text-gray-300">
               Fake banking login pages designed to steal credentials.
@@ -63,7 +63,7 @@ export default function Home() {
 
           <div className="bg-white/5 p-6 rounded-xl border border-white/10">
             <img
-              src={image2}
+              src="/images/email-scam-main.png" alt="Email scam"
               className="rounded-lg mb-4"
             />
             <p className="text-gray-300">
@@ -73,7 +73,7 @@ export default function Home() {
 
           <div className="bg-white/5 p-6 rounded-xl border border-white/10">
             <img
-              src={image3}
+              src="/images/Fake-Giveaway-Scams-on-Social-Media-Platforms.jpg" alt="Social media scam" 
               className="rounded-lg mb-4"
             />
             <p className="text-gray-300">

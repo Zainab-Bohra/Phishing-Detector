@@ -1,7 +1,5 @@
 import UrlScanner from "../../components/UrlScanner/UrlScanner";
-// import image1 from "../../../public/images/Bank-fake.png";
-// import image2 from "../../../public/images/email-scam-main.png";
-// import image3 from "../../../public/images/Fake-Giveaway-Scams-on-Social-Media-Platforms.jpg";
+import { FaShieldAlt, FaEnvelope, FaGift } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -47,36 +45,37 @@ export default function Home() {
           </p>
         </div>
       </section>
+
+      {/* COMMON PHISHING EXAMPLES */}
       <section className="max-w-6xl mx-auto px-6 pb-24">
         <h2 className="text-3xl font-bold text-center mb-12">
           Common Phishing Examples
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-white/5 p-6 rounded-xl border border-white/10">
-            <img src="/images/Bank-fake.png" alt="Bank scam"
-             className="rounded-lg mb-4" />
-            <p className="text-gray-300">
+          {/* Fake Banking Pages */}
+          <div className="bg-white/5 p-6 rounded-xl border border-white/10 flex flex-col items-center hover:scale-105 transition">
+            <FaShieldAlt className="text-red-500 text-6xl mb-4" />
+            <h4 className="text-xl font-semibold mb-2">Fake Banking Pages</h4>
+            <p className="text-gray-300 text-center">
               Fake banking login pages designed to steal credentials.
             </p>
           </div>
 
-          <div className="bg-white/5 p-6 rounded-xl border border-white/10">
-            <img
-              src="/images/email-scam-main.png" alt="Email scam"
-              className="rounded-lg mb-4"
-            />
-            <p className="text-gray-300">
+          {/* Phishing Emails */}
+          <div className="bg-white/5 p-6 rounded-xl border border-white/10 flex flex-col items-center hover:scale-105 transition">
+            <FaEnvelope className="text-blue-500 text-6xl mb-4" />
+            <h4 className="text-xl font-semibold mb-2">Phishing Emails</h4>
+            <p className="text-gray-300 text-center">
               Emails pretending to be from trusted companies.
             </p>
           </div>
 
-          <div className="bg-white/5 p-6 rounded-xl border border-white/10">
-            <img
-              src="/images/Fake-Giveaway-Scams-on-Social-Media-Platforms.jpg" alt="Social media scam" 
-              className="rounded-lg mb-4"
-            />
-            <p className="text-gray-300">
+          {/* Fake Giveaways */}
+          <div className="bg-white/5 p-6 rounded-xl border border-white/10 flex flex-col items-center hover:scale-105 transition">
+            <FaGift className="text-green-500 text-6xl mb-4" />
+            <h4 className="text-xl font-semibold mb-2">Fake Giveaways</h4>
+            <p className="text-gray-300 text-center">
               Fake offers and giveaway scams on social media.
             </p>
           </div>
